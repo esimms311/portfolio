@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = 'myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>calculator directive </title>
+
+  </head>
+  <body ng-controller = 'mainCtrl'>
+
+<calculator  num1 ='result' calc = 'add(a, b)' text = 'add'> </calculator>
+<calculator  num1 ='result' calc = 'subtract(a, b)' text = 'sub'> </calculator>
+<calculator  num1 ='result' calc = 'multiply(a, b)' text = 'multiply'> </calculator>
+<calculator num1 ='result'  calc = 'divide(a, b)' text = 'divide'> </calculator>
+
+result is <span class = 'result'> {{result}} </span>
+
+    <script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.js'> </script>
+      <script src= './js/app.js'> </script>
+      <script src = './js/mainCtrl.js'> </script>
+      <script src = './js/calculatorDirective.js'></script>
+      <!-- <script src = ''> </script> -->
+  </body>
+
+
+  </html>
